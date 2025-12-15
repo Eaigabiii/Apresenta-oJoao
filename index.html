@@ -277,7 +277,7 @@
         </div>
     </section>
 
-    <!-- DRIVERS REGIONAIS (Mantido) -->
+    <!-- DRIVERS REGIONAIS -->
     <section class="mb-20 container mx-auto px-6 max-w-6xl">
         <div class="text-center mb-10">
             <h3 class="text-2xl text-white font-bold uppercase tracking-widest">Drivers Regionais</h3>
@@ -302,12 +302,73 @@
                 <p class="text-xs text-gray-400">Hospedagem boutique e Beach Clubs atraem público com tíquete médio acima da média do Nordeste.</p>
             </div>
             <!-- Driver 3 -->
-            <div class="demand-card bg-[#1A2623] p-6 rounded-xl border border-white/5 text-center transition duration-300">
-                <div class="w-14 h-14 mx-auto bg-[#111816] rounded-full flex items-center justify-center mb-4 text-green-500 text-2xl">
-                    <i class="fa-solid fa-route"></i>
+            <div class="demand-card bg-[#1A2623] p-6 rounded-xl border border-white/5 text-center transition duration-300 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-r-green/10 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div class="w-14 h-14 mx-auto bg-[#111816] rounded-full flex items-center justify-center mb-4 text-green-500 text-2xl relative z-10">
+                    <i class="fa-solid fa-plane-departure"></i>
                 </div>
-                <h4 class="text-white font-bold mb-2">Corredor Estratégico</h4>
-                <p class="text-xs text-gray-400">Acesso fácil: 2h do Aeroporto de Recife e 2h30 de Maceió pela rodovia AL-101 Norte.</p>
+                <h4 class="text-white font-bold mb-2 relative z-10">Novo Aeroporto</h4>
+                <p class="text-xs text-gray-400 relative z-10">Aeroporto Costa dos Corais previsto para o próximo ano. <strong class="text-r-green">Maior driver de valorização da região.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAZONALIDADE E EVENTOS (Novo) -->
+    <section class="py-12 bg-[#1A2623] border-t border-white/5">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-3 text-xl">
+                        <i class="fa-regular fa-calendar-check text-r-gold"></i> Sazonalidade Otimizada
+                    </h4>
+                    <table class="w-full text-sm text-left text-gray-400">
+                        <thead class="text-xs text-r-gold uppercase bg-[#111816]">
+                            <tr>
+                                <th class="px-4 py-3 rounded-l-lg">Período</th>
+                                <th class="px-4 py-3">Demanda</th>
+                                <th class="px-4 py-3 rounded-r-lg">Motivador</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/5">
+                                <td class="px-4 py-3 text-white font-bold">Dez-Fev</td>
+                                <td class="px-4 py-3 text-r-green font-bold">Altíssima</td>
+                                <td class="px-4 py-3">Verão + Férias</td>
+                            </tr>
+                            <tr class="border-b border-white/5">
+                                <td class="px-4 py-3 text-white">Julho</td>
+                                <td class="px-4 py-3 text-r-green font-bold">Alta</td>
+                                <td class="px-4 py-3">Férias Escolares</td>
+                            </tr>
+                            <tr class="border-b border-white/5">
+                                <td class="px-4 py-3 text-white">Out-Nov</td>
+                                <td class="px-4 py-3 text-yellow-500 font-bold">Média-Alta</td>
+                                <td class="px-4 py-3">Pré-Verão / Casamentos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-3 text-xl">
+                        <i class="fa-solid fa-champagne-glasses text-r-gold"></i> Eventos Golden
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 bg-[#111816] p-4 rounded-lg border border-white/5">
+                            <i class="fa-solid fa-star text-r-gold mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Réveillon Maragogi</strong>
+                                <span class="text-gray-400 text-xs">Diária Média (ADR) +250%. 100% de ocupação garantida.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-[#111816] p-4 rounded-lg border border-white/5">
+                            <i class="fa-solid fa-masks-theater text-r-gold mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Carnaval</strong>
+                                <span class="text-gray-400 text-xs">Diária Média (ADR) +180%. Alta demanda regional.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -436,123 +497,11 @@
         </div>
     </section>
 
-    <!-- ESTUDO DE RENTABILIDADE (DETALHADO E PROGRESSIVO) -->
-    <section class="py-24 bg-[#151F1D] border-t border-white/5">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="text-center mb-12">
-                <span class="text-r-green text-xs uppercase tracking-[0.2em] font-bold">Análise de Viabilidade</span>
-                <h2 class="text-4xl font-display text-white mt-3 mb-4">Estudo de Rentabilidade Profissional</h2>
-                <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    Projeção detalhada considerando sazonalidade, ocupação média e custos operacionais de uma gestão Short Stay de alta performance.
-                </p>
-            </div>
-
-            <!-- Cards Resumo Progressivo -->
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <!-- 1 Unidade -->
-                <div class="bg-[#1A2623] p-8 rounded-xl border border-white/5 text-center hover:border-r-green/30 transition duration-300">
-                    <div class="text-gray-400 text-xs uppercase font-bold mb-2">1 Unidade</div>
-                    <div class="text-3xl font-bold text-white mb-1">R$ 15.000</div>
-                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal Est.</div>
-                </div>
-
-                <!-- 2 Unidades -->
-                <div class="bg-gradient-to-b from-[#1A2623] to-[#111816] p-8 rounded-xl border border-r-green/50 text-center transform scale-105 shadow-2xl relative z-10">
-                    <div class="absolute top-0 right-0 bg-r-green text-[#111816] text-[10px] font-bold px-2 py-1 uppercase">Seu Cenário</div>
-                    <div class="text-white text-sm uppercase font-bold mb-2">2 Unidades</div>
-                    <div class="text-4xl font-extrabold text-r-green mb-1">R$ 30.000</div>
-                    <div class="text-gray-300 text-xs font-bold">Renda Líquida Mensal Est.</div>
-                </div>
-
-                <!-- 3 Unidades -->
-                <div class="bg-[#1A2623] p-8 rounded-xl border border-r-gold/30 text-center hover:border-r-gold transition duration-300">
-                    <div class="text-r-gold text-xs uppercase font-bold mb-2">3 Unidades</div>
-                    <div class="text-3xl font-bold text-white mb-1">R$ 45.000</div>
-                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal Est.</div>
-                </div>
-            </div>
-
-            <!-- Tabela Detalhada de Cenários (Foco em 2 Unidades) -->
-            <div class="bg-[#1A2623] rounded-xl border border-white/10 overflow-hidden shadow-2xl">
-                <div class="bg-[#0F1413] p-6 border-b border-white/5 flex justify-between items-center">
-                    <h3 class="text-white font-bold uppercase tracking-widest text-sm md:text-base">Detalhamento Operacional (Base: 2 Unidades)</h3>
-                    <div class="flex gap-2">
-                        <span class="px-3 py-1 bg-white/5 text-gray-400 text-[10px] font-bold rounded border border-white/10 uppercase">Cenários</span>
-                    </div>
-                </div>
-                
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left text-gray-400">
-                        <thead class="text-xs text-gray-500 uppercase bg-[#151F1D] border-b border-white/5">
-                            <tr>
-                                <th class="px-6 py-4 font-bold">Indicadores (Mensal)</th>
-                                <th class="px-6 py-4 text-center">Conservador</th>
-                                <th class="px-6 py-4 text-center">Moderado</th>
-                                <th class="px-6 py-4 text-center text-r-green border-b-2 border-r-green">Otimizado (Meta)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
-                                <td class="px-6 py-4 font-medium text-white">Diária Média (ADR)</td>
-                                <td class="px-6 py-4 text-center">R$ 600,00</td>
-                                <td class="px-6 py-4 text-center">R$ 750,00</td>
-                                <td class="px-6 py-4 text-center text-white font-bold bg-[#151F1D]/50">R$ 850,00</td>
-                            </tr>
-                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
-                                <td class="px-6 py-4 font-medium text-white">Ocupação Média</td>
-                                <td class="px-6 py-4 text-center">50% (15 dias)</td>
-                                <td class="px-6 py-4 text-center">60% (18 dias)</td>
-                                <td class="px-6 py-4 text-center text-white font-bold bg-[#151F1D]/50">70% (21 dias)</td>
-                            </tr>
-                            <tr class="border-b border-white/5 bg-[#111816]">
-                                <td class="px-6 py-4 font-bold text-gray-300">Receita Bruta Total</td>
-                                <td class="px-6 py-4 text-center font-bold">R$ 18.000,00</td>
-                                <td class="px-6 py-4 text-center font-bold">R$ 27.000,00</td>
-                                <td class="px-6 py-4 text-center text-r-gold font-bold bg-[#151F1D]/50">R$ 35.700,00</td>
-                            </tr>
-                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
-                                <td class="px-6 py-4">Custos Operacionais (~25%) <span class="block text-[10px] text-gray-600">Gestão, Limpeza, Manutenção, Energia</span></td>
-                                <td class="px-6 py-4 text-center text-r-red">- R$ 4.500,00</td>
-                                <td class="px-6 py-4 text-center text-r-red">- R$ 6.750,00</td>
-                                <td class="px-6 py-4 text-center text-r-red font-bold bg-[#151F1D]/50">- R$ 8.925,00</td>
-                            </tr>
-                            <tr class="bg-[#0F1413]">
-                                <td class="px-6 py-5 font-extrabold text-white text-base">LUCRO LÍQUIDO MENSAL</td>
-                                <td class="px-6 py-5 text-center font-bold text-white">R$ 13.500,00</td>
-                                <td class="px-6 py-5 text-center font-bold text-white">R$ 20.250,00</td>
-                                <td class="px-6 py-5 text-center font-extrabold text-r-green text-xl bg-[#151F1D]/50 border-b-4 border-r-green">R$ 26.775,00</td>
-                            </tr>
-                            <tr>
-                                <td class="px-6 py-3 text-xs italic text-gray-600">Yield Anual Estimado (a.a.)</td>
-                                <td class="px-6 py-3 text-center text-xs text-gray-500">~15%</td>
-                                <td class="px-6 py-3 text-center text-xs text-gray-500">~23%</td>
-                                <td class="px-6 py-3 text-center text-xs text-r-gold font-bold bg-[#151F1D]/50">~30%+</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <div class="mt-8 grid md:grid-cols-2 gap-6">
-                <div class="bg-[#1A2623] p-4 rounded-lg border border-white/5 flex items-start gap-4">
-                    <i class="fa-solid fa-trophy text-r-gold text-xl mt-1"></i>
-                    <div>
-                        <h5 class="text-white font-bold text-sm uppercase mb-1">Por que R$ 30k é possível?</h5>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            Maragogi tem uma das maiores diárias médias do Nordeste. Em alta temporada (Dez-Fev), diárias ultrapassam <strong>R$ 1.200</strong> facilmente. A média anualizada de R$ 850 é conservadora para um produto "Pé na Areia" com padrão resort.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-[#1A2623] p-4 rounded-lg border border-white/5 flex items-start gap-4">
-                    <i class="fa-solid fa-chart-pie text-r-green text-xl mt-1"></i>
-                    <div>
-                        <h5 class="text-white font-bold text-sm uppercase mb-1">Gestão Profissional</h5>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            A chave para atingir o cenário otimizado é uma gestão que utilize precificação dinâmica (Revenue Management), maximizando a diária nos picos de demanda.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!-- MOODBOARD INVESTIMENTO -->
+    <section class="py-12 bg-[#111816] flex justify-center">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h3 class="text-center text-white font-bold uppercase tracking-widest mb-6">Moodboard do Investimento</h3>
+            <img src="https://i.ibb.co/wDPt63J/Whats-App-Image-2025-12-15-at-08-54-11.jpg" alt="Moodboard Investimento" class="w-full rounded-2xl shadow-2xl border border-r-gold/30">
         </div>
     </section>
 
@@ -600,7 +549,7 @@
                 </div>
                 <div class="text-right mt-6 md:mt-0">
                     <p class="text-r-green font-extrabold text-4xl md:text-5xl">R$ 5.000.000,00+</p>
-                    <p class="text-white font-bold text-xl mt-2">Renda Mensal Est: R$ 45.000,00</p>
+                    <p class="text-white font-bold text-xl mt-2">Patrimônio Sólido</p>
                 </div>
             </div>
         </div>
