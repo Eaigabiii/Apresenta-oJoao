@@ -436,52 +436,122 @@
         </div>
     </section>
 
-    <!-- ESTUDO DE RENTABILIDADE (PROGRESSIVO - PREMIUM) -->
+    <!-- ESTUDO DE RENTABILIDADE (DETALHADO E PROGRESSIVO) -->
     <section class="py-24 bg-[#151F1D] border-t border-white/5">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-12">
-                <span class="text-r-green text-xs uppercase tracking-[0.2em] font-bold">Fluxo de Caixa Otimizado</span>
-                <h2 class="text-4xl font-display text-white mt-3 mb-4">Rentabilidade Mensal Estimada</h2>
+                <span class="text-r-green text-xs uppercase tracking-[0.2em] font-bold">Análise de Viabilidade</span>
+                <h2 class="text-4xl font-display text-white mt-3 mb-4">Estudo de Rentabilidade Profissional</h2>
                 <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    Projeção baseada em diárias de alta performance (R$ 850,00) e ocupação otimizada.
+                    Projeção detalhada considerando sazonalidade, ocupação média e custos operacionais de uma gestão Short Stay de alta performance.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <!-- Cards Resumo Progressivo -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
                 <!-- 1 Unidade -->
                 <div class="bg-[#1A2623] p-8 rounded-xl border border-white/5 text-center hover:border-r-green/30 transition duration-300">
                     <div class="text-gray-400 text-xs uppercase font-bold mb-2">1 Unidade</div>
-                    <div class="text-3xl font-bold text-white mb-1">R$ 15.000,00</div>
-                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal</div>
-                    <div class="mt-4 pt-4 border-t border-white/5 text-xs text-gray-500">
-                        Yield Anual: > 22%
-                    </div>
+                    <div class="text-3xl font-bold text-white mb-1">R$ 15.000</div>
+                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal Est.</div>
                 </div>
 
                 <!-- 2 Unidades -->
-                <div class="bg-gradient-to-b from-[#1A2623] to-[#111816] p-8 rounded-xl border border-r-green/50 text-center transform scale-105 shadow-2xl relative">
-                    <div class="absolute top-0 right-0 bg-r-green text-[#111816] text-[10px] font-bold px-2 py-1 uppercase">Opção Atual</div>
+                <div class="bg-gradient-to-b from-[#1A2623] to-[#111816] p-8 rounded-xl border border-r-green/50 text-center transform scale-105 shadow-2xl relative z-10">
+                    <div class="absolute top-0 right-0 bg-r-green text-[#111816] text-[10px] font-bold px-2 py-1 uppercase">Seu Cenário</div>
                     <div class="text-white text-sm uppercase font-bold mb-2">2 Unidades</div>
-                    <div class="text-4xl font-extrabold text-r-green mb-1">R$ 30.000,00</div>
-                    <div class="text-gray-300 text-xs font-bold">Renda Líquida Mensal</div>
-                    <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gray-400">
-                        Yield Anual: > 22%
-                    </div>
+                    <div class="text-4xl font-extrabold text-r-green mb-1">R$ 30.000</div>
+                    <div class="text-gray-300 text-xs font-bold">Renda Líquida Mensal Est.</div>
                 </div>
 
                 <!-- 3 Unidades -->
                 <div class="bg-[#1A2623] p-8 rounded-xl border border-r-gold/30 text-center hover:border-r-gold transition duration-300">
                     <div class="text-r-gold text-xs uppercase font-bold mb-2">3 Unidades</div>
-                    <div class="text-3xl font-bold text-white mb-1">R$ 45.000,00</div>
-                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal</div>
-                    <div class="mt-4 pt-4 border-t border-white/5 text-xs text-gray-500">
-                        Maximização de Caixa
+                    <div class="text-3xl font-bold text-white mb-1">R$ 45.000</div>
+                    <div class="text-r-green text-xs font-bold">Renda Líquida Mensal Est.</div>
+                </div>
+            </div>
+
+            <!-- Tabela Detalhada de Cenários (Foco em 2 Unidades) -->
+            <div class="bg-[#1A2623] rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+                <div class="bg-[#0F1413] p-6 border-b border-white/5 flex justify-between items-center">
+                    <h3 class="text-white font-bold uppercase tracking-widest text-sm md:text-base">Detalhamento Operacional (Base: 2 Unidades)</h3>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 text-[10px] font-bold rounded border border-white/10 uppercase">Cenários</span>
                     </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-400">
+                        <thead class="text-xs text-gray-500 uppercase bg-[#151F1D] border-b border-white/5">
+                            <tr>
+                                <th class="px-6 py-4 font-bold">Indicadores (Mensal)</th>
+                                <th class="px-6 py-4 text-center">Conservador</th>
+                                <th class="px-6 py-4 text-center">Moderado</th>
+                                <th class="px-6 py-4 text-center text-r-green border-b-2 border-r-green">Otimizado (Meta)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
+                                <td class="px-6 py-4 font-medium text-white">Diária Média (ADR)</td>
+                                <td class="px-6 py-4 text-center">R$ 600,00</td>
+                                <td class="px-6 py-4 text-center">R$ 750,00</td>
+                                <td class="px-6 py-4 text-center text-white font-bold bg-[#151F1D]/50">R$ 850,00</td>
+                            </tr>
+                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
+                                <td class="px-6 py-4 font-medium text-white">Ocupação Média</td>
+                                <td class="px-6 py-4 text-center">50% (15 dias)</td>
+                                <td class="px-6 py-4 text-center">60% (18 dias)</td>
+                                <td class="px-6 py-4 text-center text-white font-bold bg-[#151F1D]/50">70% (21 dias)</td>
+                            </tr>
+                            <tr class="border-b border-white/5 bg-[#111816]">
+                                <td class="px-6 py-4 font-bold text-gray-300">Receita Bruta Total</td>
+                                <td class="px-6 py-4 text-center font-bold">R$ 18.000,00</td>
+                                <td class="px-6 py-4 text-center font-bold">R$ 27.000,00</td>
+                                <td class="px-6 py-4 text-center text-r-gold font-bold bg-[#151F1D]/50">R$ 35.700,00</td>
+                            </tr>
+                            <tr class="border-b border-white/5 hover:bg-[#151F1D]">
+                                <td class="px-6 py-4">Custos Operacionais (~25%) <span class="block text-[10px] text-gray-600">Gestão, Limpeza, Manutenção, Energia</span></td>
+                                <td class="px-6 py-4 text-center text-r-red">- R$ 4.500,00</td>
+                                <td class="px-6 py-4 text-center text-r-red">- R$ 6.750,00</td>
+                                <td class="px-6 py-4 text-center text-r-red font-bold bg-[#151F1D]/50">- R$ 8.925,00</td>
+                            </tr>
+                            <tr class="bg-[#0F1413]">
+                                <td class="px-6 py-5 font-extrabold text-white text-base">LUCRO LÍQUIDO MENSAL</td>
+                                <td class="px-6 py-5 text-center font-bold text-white">R$ 13.500,00</td>
+                                <td class="px-6 py-5 text-center font-bold text-white">R$ 20.250,00</td>
+                                <td class="px-6 py-5 text-center font-extrabold text-r-green text-xl bg-[#151F1D]/50 border-b-4 border-r-green">R$ 26.775,00</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-3 text-xs italic text-gray-600">Yield Anual Estimado (a.a.)</td>
+                                <td class="px-6 py-3 text-center text-xs text-gray-500">~15%</td>
+                                <td class="px-6 py-3 text-center text-xs text-gray-500">~23%</td>
+                                <td class="px-6 py-3 text-center text-xs text-r-gold font-bold bg-[#151F1D]/50">~30%+</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             
-            <div class="text-center">
-                 <p class="text-gray-400 text-xs">*Cálculo base: R$ 850 diária x 20 dias/mês - 20% custos operacionais.</p>
+            <div class="mt-8 grid md:grid-cols-2 gap-6">
+                <div class="bg-[#1A2623] p-4 rounded-lg border border-white/5 flex items-start gap-4">
+                    <i class="fa-solid fa-trophy text-r-gold text-xl mt-1"></i>
+                    <div>
+                        <h5 class="text-white font-bold text-sm uppercase mb-1">Por que R$ 30k é possível?</h5>
+                        <p class="text-gray-400 text-xs leading-relaxed">
+                            Maragogi tem uma das maiores diárias médias do Nordeste. Em alta temporada (Dez-Fev), diárias ultrapassam <strong>R$ 1.200</strong> facilmente. A média anualizada de R$ 850 é conservadora para um produto "Pé na Areia" com padrão resort.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#1A2623] p-4 rounded-lg border border-white/5 flex items-start gap-4">
+                    <i class="fa-solid fa-chart-pie text-r-green text-xl mt-1"></i>
+                    <div>
+                        <h5 class="text-white font-bold text-sm uppercase mb-1">Gestão Profissional</h5>
+                        <p class="text-gray-400 text-xs leading-relaxed">
+                            A chave para atingir o cenário otimizado é uma gestão que utilize precificação dinâmica (Revenue Management), maximizando a diária nos picos de demanda.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
